@@ -1,0 +1,18 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import Button from './Button';
+
+<Meta title="MDX/Button" component={Button} />
+
+# Buttons
+
+With `MDX` we can define a story for `Button` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story name="all buttons">
+    <div width="200px">
+      <Button text="Submit" />
+      <Button text="Disabled" />
+    </div>
+  </Story>
+</Preview>

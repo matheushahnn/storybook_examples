@@ -9,8 +9,8 @@ export default {
   decorators: [
     withKnobs, 
     withTests({ results}),
-    storyFn => <div style={{ maxWidth: '300px' }}>{storyFn()}</div>
-  ]
+    storyFn2 => <div style={{ maxWidth: '300px' }}>{storyFn2()}</div>
+  ],
 }
 
 export const button = () => (
@@ -22,6 +22,6 @@ export const button = () => (
 
 button.story = {
   parameters: {
-    jest: ['Button.test.js'],
-  },
+    jest: ['Button.test.js']
+  }
 }
