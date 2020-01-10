@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import styled from "styled-components";
 
 const ButtonStyled = styled.button`
@@ -33,12 +32,4 @@ export default function Button({
       { label }
     </ButtonStyled>
   )
-}
-
-Button.propTypes = {
-  isDisabled: PropTypes.bool,
-}
-
-Button.defaultProps = {
-  isDisabled: false
 }

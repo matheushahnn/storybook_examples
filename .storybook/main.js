@@ -5,6 +5,7 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-links',
     '@storybook/addon-knobs',
+    '@storybook/addon-jest',
     {
     name: "@storybook/addon-docs/preset",
       options: {
