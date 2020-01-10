@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import results from '.././../.jest-test-results.json';
-import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import { withTests } from "@storybook/addon-jest";
 
 export default {
@@ -15,8 +15,15 @@ export default {
 
 export const button = () => (
   <Button 
-    disabled={boolean("Disabled", false)}
-    text={text("Label", "Submit", "text")}
+    isDisabled={boolean("Disable", false)}
+    label={text("Label", "Submit", "text")}
+  ></Button>
+);
+
+export const disabled = () => (
+  <Button 
+    isDisabled={boolean("Disable", true)}
+    label={text("Label", "Submit", "text")}
   ></Button>
 );
 
